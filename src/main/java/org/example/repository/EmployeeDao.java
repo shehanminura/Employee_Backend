@@ -1,4 +1,7 @@
 package org.example.repository;
 
-public interface EmployeeDao {
+import org.example.entity.EmployeeEntity;
+import org.springframework.data.repository.CrudRepository;
+
+public interface EmployeeDao extends CrudRepository<EmployeeEntity,Integer> {
 }
